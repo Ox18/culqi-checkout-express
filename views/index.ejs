@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CULQI - EXPRESS</title>
+    <link
+      rel="shortcut icon"
+      href="https://culqi.com/assets/images/brand/brand.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="w-full p-6 px-6 grid grid-cols-1 gap-4 place-content-center place-items-center"
+    >
+      <h1 class="my-6 text-xl font-bold text-center">EXPRESS DEMO</h1>
+      <h2 class="text-xl font-bold text-purple-800">CULQI - CUSTOM CHECKOUT</h2>
+      <p class="text-lg font-semibold">(Cargo + 3DS)</p>
+      <div class="mt-10 flex flex-col">
+        <button
+          class="bg-purple-500 hover:bg-purple-700 px-5 py-2 text-sm leading-5 rounded-full font-semibold text-white"
+          id="crearCharge"
+        >
+          Crear Cargo
+        </button>
+        <div class="flex w-ful mt-10 min-w-[200px] justify-start">
+          <span class="mr-10">Respuesta: </span>
+          <p id="cardResponse"></p>
+        </div>
+      </div>
+      <div class="mt-10 flex flex-col">
+        <button
+          class="bg-purple-500 hover:bg-purple-700 px-5 py-2 text-sm leading-5 rounded-full font-semibold text-white"
+          id="reset"
+        >
+          Reiniciar
+        </button>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
