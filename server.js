@@ -15,7 +15,10 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  const datos = { nombre: "Usuario" };
+  const datos = {
+    publicKey: process.env.CULQI_PUBLIC_KEY,
+    privateKey: process.env.CULQI_PRIVATE_KEY,
+  };
   res.render("index", datos);
 });
 
